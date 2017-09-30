@@ -1,0 +1,25 @@
+.la-home{
+    width:100%;
+    height: 450px;
+    display: table;
+    background-color:#666;
+
+    &__block{
+        width:100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    &__title{
+        color:#ffffff;
+        display:block;
+    }
+    &__subtitle{
+        color:#ffffff;
+        font-style: normal;
+        font-weight: 200;
+        display:block;
+        margin:20px;
+        font-size: 20px;
+    }
+}
