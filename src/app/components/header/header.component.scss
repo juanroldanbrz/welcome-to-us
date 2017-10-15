@@ -1,11 +1,15 @@
 .la-header{
     display:block;
-    position: fixed;
-    top:0;
-    right:0;
+    position: relative;
     width:100%;
+    background: #47a6ff;
     height: 100px;
-
+    z-index: 9999;
+    padding-top:29px;
+    padding-left: 30px;
+    &__link{
+        vertical-align: inherit;
+    }
     &__block{
         display:inline-block;
         width:49%;
@@ -19,12 +23,20 @@
     }
     &__item{
         display:inline-block;
+        padding-right: 30px;
+    }
+    &__link{
         color:#ffffff;
-        padding-right: 10px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 800;
+        font-size:16px;
+        &:hover{
+            text-decoration: none;
+        }
     }
     &__logo{
         display: inline-block;
-        vertical-align: top;
+        vertical-align: inherit;
     }
     &__figure{
         width:50px;
@@ -39,9 +51,19 @@
     }
     &__brand{
         display:inline-block;
+        vertical-align: inherit;
     }
     &__txt{
+        font-family: 'Quicksand', sans-serif;
         color:#ffffff;
         font-weight: 800;
+        font-size:17px;
+        display:block;
+        padding:0;
+        margin:0;
+        &--small{
+            font-size:15px;
+            font-weight: 100;
+        }
     }
 }
