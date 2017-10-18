@@ -210,6 +210,23 @@
     margin-left: 20px;
     margin-bottom: 100px;
     position: relative;
+    &__txt{
+        font-family: 'Quicksand', sans-serif;
+        color:#ffffff;
+        display:block;
+        &--bold{
+            font-weight: 600; 
+        }
+        &--bigger{
+            font-size:20px;
+        }
+    }
+    &__description{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        padding:10px;
+    }
     &__title{
         color: #47a6ff;
         font-family: 'Quicksand', sans-serif;
@@ -240,6 +257,7 @@
         height: 100%;
         background:#47a6ff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.13);
+        position: relative;
     }
 }
 .la-blog{
@@ -358,15 +376,16 @@
         width:80px;
         text-transform: uppercase;
         height:80px;
-        padding-top:29px;
+        padding-top:32px;
         font-family: 'Quicksand', sans-serif;
         border-radius: 50%;
-        font-weight: 400;
+        font-weight: 600;
+        font-size:12px;
         text-align: center;
         background:#47a6ff;
         color:#ffffff;
         cursor:pointer;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.10), 0 3px 3px rgba(0, 0, 0, 0.10);
         margin-left: 10px;
         &:hover{
             background-color:#ffffff;
@@ -374,18 +393,25 @@
         }
     }
     &__button{
-        text-align: right;
         display: block;
-        margin:0 auto;
         box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
-        background:#47a6ff;
-        color:#ffffff;
+        background:#aaaaaa;
+        color:#666666;
         border:0;
-        padding:13px;
-        border-radius: 10%;
+        padding:10px;
+        width:65px;
+        height:65px;
+        border-radius: 50%;
+        &::after{
+            font-family: FontAwesome;
+            content:'\f054';
+            color:#666666;
+        }
         &:hover{
-            background:#ffffff;
-            color:#47a6ff;
+            background:#47a6ff;
+            .la-contact__button::after{
+                color:#ffffff;
+            }
         }
     }
 }
