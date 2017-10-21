@@ -3,6 +3,7 @@
     margin-top: 150px;
     margin-left: 20px;
     position:relative;
+    z-index: 2;
     
     &__container{
         .la-details__block:nth-child(1){

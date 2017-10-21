@@ -1,18 +1,22 @@
 .la-header{
     display:block;
-    position: relative;
     width:100%;
-    background: #47a6ff;
     height: 100px;
     z-index: 9999;
-    padding-top:29px;
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
     padding-left: 30px;
+    z-index: 1;
     &__link{
         vertical-align: inherit;
     }
     &__block{
         display:inline-block;
-        width:49%;
+        width:calc(100% - 33%);
+        &:first-child{
+            width:32%;
+        }
+        
         vertical-align: middle;
     }
     &__list{
@@ -64,6 +68,40 @@
         &--small{
             font-size:15px;
             font-weight: 100;
+        }
+    }
+}
+
+
+/*980*/
+@media (max-width: 995px) {
+    
+    .la-header{
+        &__block{
+            &:not(:nth-child(1)){
+                &:after{
+                    cursor: pointer;
+                    font-family: 'fontAwesome';
+                    content:'\f0c9';
+                    color:#ffffff;
+                    font-size:33px;
+                    padding-right: 25px;
+                    display: block;
+                    text-align: right;
+                    position: relative;
+                }        
+                
+            }
+        }
+        &__list{
+            display:none;
+        }
+    }
+}
+@media (max-width: 415px){
+    .la-header{
+        &__block{
+            width:49% !important;
         }
     }
 }

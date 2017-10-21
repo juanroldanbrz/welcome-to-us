@@ -4,6 +4,7 @@
     margin-left: 20px;
     margin-bottom: 100px;
     position: relative;
+    z-index: 2;
     &__txt{
         font-family: 'Quicksand', sans-serif;
         color:#ffffff;
@@ -52,5 +53,27 @@
         background:#47a6ff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.13);
         position: relative;
+    }
+}
+@media (max-width: 992px){
+    .la-about{
+        &__profile{
+            width:32%;
+            padding:4px;
+        }
+    }
+}
+@media (max-width: 670px){
+    .la-about{
+        &__profile{
+            width:49%;
+        }
+    }
+}
+@media (max-width: 500px){
+    .la-about{
+        &__profile{
+            width:95%;
+        }
     }
 }
