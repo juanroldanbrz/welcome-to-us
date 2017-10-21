@@ -6,6 +6,21 @@ html,body{
     height:100%;
     font-family: 'Quicksand', sans-serif;
 }
+.hide-accessible{
+    /*position: absolute;
+    left:999999px;*/
+    display:none;
+}
+.no-padding-r{
+    padding-right:0 !important;
+}
+.padding-t-90{
+    margin-top:90px;
+}
+.re-init{
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
 body{
     margin:0;
 }

@@ -4,12 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { AptitudeComponent } from './components/aptitude/aptitude.component';
+import { AboutComponent } from './components/about/about.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    AptitudeComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule
