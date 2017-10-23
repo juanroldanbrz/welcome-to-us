@@ -1,12 +1,11 @@
 .la-blog{
-    background-color:rgba(71,166,255,.9);
     min-height: 520px;
     padding-top: 50px;
     padding-bottom: 5px;
     margin-bottom: 100px;
     z-index: 2;
     position: relative;
-    &::before{
+    &::after{
         content: '';
         position: absolute;
         background:url('/assets/wallpaper2.jpg');
@@ -87,5 +86,27 @@
 	    border-radius: 10px;
 	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
+    }
+}
+
+@media (max-width: 870px){
+    .col-xs-6{
+        width:100%;
+        &:nth-child(2){
+            padding:0;
+            .la-blog{
+                &__slide{
+                    margin-left:0;
+                }
+                &__list{
+                    padding-left: 0;
+                }
+                }
+            }
+    }
+    .la-blog{
+        &__container{
+            padding-left: 55px;
+        }
     }
 }

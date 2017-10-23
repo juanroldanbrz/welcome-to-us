@@ -37,7 +37,10 @@
     &__block{
         background:#ffffff;
         margin-top: -20px;
-        width:100%;
+        width:352px;
+        z-index: 2;
+        position: relative;
+        margin: 0 auto;
         display:block;
         padding-left:20px;
         padding-top: 20px;
@@ -94,5 +97,11 @@
                 color:#ffffff;
             }
         }
+    }
+}
+
+@media (max-width: 755px){
+    .col-xs-6{
+        width:100%;
     }
 }
