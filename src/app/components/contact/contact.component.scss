@@ -1,10 +1,12 @@
-
 .la-contact{
-    margin-left: 20px;
     position: relative;
     z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background:#47a6ff;
     &__title{
-        color: #47a6ff;
+        color: #ffffff;
         font-family: 'Quicksand', sans-serif;
         position: relative;
         &--to-background{
@@ -20,11 +22,24 @@
             line-height: 184px;
             z-index: -1;
         }
+        &--to-center{
+            text-align: center;
+        }
     }
     &__description{
-        color:#888888;
+        color:#ffffff;
         font-family: 'Quicksand', sans-serif;
         font-size:18px;
+        padding:10px;
+        &--blue{
+            color:#47a6ff;
+        }
+        &--to-left{
+            text-align: left;
+        }
+        &--to-center{
+            text-align: center;
+        }
     }
     &__radio{
         display:none;
@@ -36,17 +51,73 @@
     }
     &__block{
         background:#ffffff;
-        margin-top: -20px;
-        width:352px;
-        z-index: 2;
+        width:70%;
+        z-index: 999;
         position: relative;
-        margin: 0 auto;
-        display:block;
-        padding-left:20px;
-        padding-top: 20px;
-        padding-right:20px;
-        padding-bottom:20px;
+        display:inline-block;
+        padding:0;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    &__label{
+        display:block;
+        padding:10px;
+        color:#666666;
+        font-size:18px;
+        font-size: 'Quicksand', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        width:100%;
+    }
+    &__input{
+        display:block;
+        padding:10px;
+        text-align: left;
+        width:100%;
+        font-family: 'Quicksand', sans-serif;
+        border:0;
+        font-weight: 400;
+        border-bottom:1px solid #ddd;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__textarea{
+        border:0;
+        font-family: 'Quicksand', sans-serif;
+        border-bottom:1px solid #ddd;
+        display:block;
+        width:100%;
+        font-weight: 400;
+        text-align: left;
+        padding:10px;
+        min-height: 100px;
+        resize: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__side{
+        text-align: left;
+        width:55%;
+        padding:20px;
+        vertical-align: top;
+        position: relative;
+        display:inline-block;
+        &:first-child{
+            padding-right: 30px;
+            &:after{
+                content:'';
+                position: absolute;
+                top:46px;
+                right:0;
+                background:#ddd;
+                width:2px;
+                height: 80%;
+            }
+        }
+        &:last-child{
+            width:44%;
+        }
     }
     
     &__option {
@@ -70,11 +141,16 @@
             color:#47a6ff;
         }
     }
+    &__container{
+        margin-top: -50px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
     &__container-bottom{
         display:block;
         position:absolute;
-        bottom:-10px;
-        right:0;
+        bottom: -15px;
+        right: -17px;
     }
     &__button{
         display: block;

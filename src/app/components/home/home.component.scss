@@ -5,7 +5,7 @@
     margin-top:-139px;
     -webkit-transform: skew(0deg, -10deg);
     transform: skew(0deg, -10deg);
-    padding-top: 200px;
+    padding-top: 180px;
     &::before{
         content: '';
         background:rgba(71,166,255, .85);
@@ -15,8 +15,7 @@
         z-index: 0;
         height: 100%;    
     }
-    &::after{
-        content: '';
+    &__wall{
         z-index: -1;
         position: absolute;
         top:0;
@@ -26,6 +25,7 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
     &__list{
         position:absolute;
         right:20px;
@@ -114,7 +114,7 @@
     display: block;
     position: relative;
     width:100%;
-    margin-top:60px;
+    float:left;
     &__txt{
         font-family: 'Quicksand', sans-serif;
         color:#ffffff;

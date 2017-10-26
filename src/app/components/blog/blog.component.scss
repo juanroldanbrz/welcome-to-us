@@ -1,8 +1,8 @@
 .la-blog{
-    min-height: 520px;
+    overflow: hidden;
+    min-height: 560px;
     padding-top: 50px;
     padding-bottom: 5px;
-    margin-bottom: 100px;
     z-index: 2;
     position: relative;
     &::after{
