@@ -1,5 +1,7 @@
 .la-portfolio{
-    overflow: hidden;
+    font-size: 0;
+    position: relative;
+
     &__container{
         position: relative;
         display: block;
@@ -11,26 +13,22 @@
         list-style: none;
         margin:0;
         padding:0;
-        white-space: nowrap;
-        overflow-y:hidden;
-        overflow-x: scroll; 
         font-size: 0;
     }
     &__item{
-        width:300px;
+        width:25%;
         display: inline-block;
-        margin-top:0;
-        margin-left: 0;
-        margin-bottom: 30px;
-        margin-right: 0;
+        margin:0;
         padding:0;
         position: relative;
-        background:#47a6ff;
+        padding:10px;
     }
-    &__container{
+    &__content{
         position: relative;
         display:table;
+        table-layout: fixed;
         width:100%;
+        background:#47a6ff;
         min-height: 200px;
     }
     &__txt{
