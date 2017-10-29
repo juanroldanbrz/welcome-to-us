@@ -5,6 +5,7 @@
     margin-right: 0;
     margin-bottom: 100px;
     position:relative;
+    overflow-x:hidden;
     z-index: 2;
     
     &__container{
@@ -90,3 +91,19 @@
 }
 
 
+@media (max-width: 650px) {
+    .la-details{
+        &__block{
+            width:100% !important;
+            text-align: center;
+            &:last-child{
+                padding-left: 0;
+                padding-top: 30px;
+            }
+        }
+        &__figure{
+            display:block;
+            margin:0 auto;
+        }
+    }
+}

@@ -1,46 +1,33 @@
 <div class="la-home">
   <app-header></app-header>
-  <div class="la-home__block">
-    <h1 class="la-home__title">bluggie</h1>
-    <h2 class="la-home__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </h2>
-    <ul class="la-home__list">
-      <li class="la-home__item">
-        <a href="#" title="Enlace">
-          <span class="hide-accessible">Primer slider</span>
-        </a>
-      </li>
-      <li class="la-home__item la-home__item--inactive">
-        <a href="#" title="Enlace">
-          <span class="hide-accessible">Primer slider</span>
-        </a>
-      </li>
-      <li class="la-home__item la-home__item--inactive">
-        <a href="#" title="Enlace">
-          <span class="hide-accessible">Primer slider</span>
-        </a>
-      </li>
-    </ul>
+  <div class="la-home__block" *ngFor="let slider of sliders">
+    <div class="la-home__container" *ngIf="slider.id == sliderActive">
+      <h1 class="la-home__title">{{slider.title}}</h1>
+      <h2 class="la-home__subtitle">{{slider.description}}</h2>
+    </div>
   </div>
+  <ul class="la-home__list">
+    <li class="la-home__item la-home__item--inactive" *ngFor="let data of sliders;index as i" (click)="activateSlider(data.id)"
+      [class.la-home__item--active]="data.id == sliderActive">
+      <a href="#" title="Enlace">
+          <span class="hide-accessible">Primer slider</span>
+        </a>
+    </li>
+  </ul>
   <!--APPTITUDE-->
   <app-aptitude></app-aptitude>
   <div class="la-home__wall">
     <span class="hide-accessible">Wallpaper</span>
   </div>
 </div>
-<div class="container">
-  <div class="row">
+ <div class="container">
     <app-details></app-details>
-  </div>
-  <div class="row">
     <app-portfolio></app-portfolio>
-  </div>
-  <div class="row">
     <app-about></app-about>
-  </div>
-</div>
-<app-blog></app-blog>
+</div> 
+  <app-blog></app-blog>  
 <!-- CONTACT-->
-<app-contact></app-contact>
+  <app-contact></app-contact>  
 <footer class="la-footer">
   <span class="la-footer__txt">Bluggie &copy; 2017</span>
 </footer>
