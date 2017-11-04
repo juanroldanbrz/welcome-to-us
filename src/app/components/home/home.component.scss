@@ -141,3 +141,11 @@
         padding-top: 13px;
     }
 }
+
+@media (max-width: 840px){
+    .la-home{
+        &__list{
+            display:none;
+        }
+    }
+}

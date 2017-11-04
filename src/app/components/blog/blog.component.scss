@@ -30,6 +30,7 @@
         &--to-background{
             opacity: .3;
             font-weight: 800;
+            overflow-x: hidden;
             font-family: 'Quicksand', sans-serif;
             font-size: 140px;
             margin: 0;
@@ -66,7 +67,7 @@
     &__list{
         list-style-type:none;
         white-space:nowrap;
-        // overflow-x:auto;
+        overflow-x:auto;
         padding-bottom:30px;
     }
     &__description{
@@ -85,9 +86,6 @@
         }
         &__container{
             padding-left: 0;
-        }
-        &__list{
-            padding:0;
         }
     }   
 }

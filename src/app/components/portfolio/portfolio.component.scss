@@ -1,7 +1,24 @@
 .la-portfolio{
     font-size: 0;
     position: relative;
-
+    &__title{
+        color: #47a6ff;
+        font-size:32px;
+        font-family: 'Quicksand', sans-serif;
+        &--to-background{
+            opacity: .03;
+            font-weight: 800;
+            font-size: 140px;
+            overflow-x: hidden;
+            margin: 0;
+            color: #444444;
+            position: absolute;
+            top: 0;
+            padding: 0;
+            line-height: 184px;
+            z-index: -1;
+        }
+    }
     &__container{
         position: relative;
         display: block;
