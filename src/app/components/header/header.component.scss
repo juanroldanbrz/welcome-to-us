@@ -2,10 +2,10 @@
     display:block;
     width:100%;
     z-index: 9999;
-    -webkit-transform: skew(0deg, 10deg);
-    transform: skew(0deg, 10deg);
+    // -webkit-transform: skew(0deg, 10deg);
+    // transform: skew(0deg, 10deg);
     padding-left: 30px;
-    z-index: 1;
+    z-index: 99;
     &__link{
         vertical-align: inherit;
     }

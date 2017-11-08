@@ -10,8 +10,8 @@
     <li class="la-home__item la-home__item--inactive" *ngFor="let data of sliders;index as i" (click)="activateSlider(data.id)"
       [class.la-home__item--active]="data.id == sliderActive">
       <a href="#" title="Enlace">
-          <span class="hide-accessible">Primer slider</span>
-        </a>
+        <span class="hide-accessible">Primer slider</span>
+      </a>
     </li>
   </ul>
   <!--APPTITUDE-->
@@ -19,15 +19,23 @@
   <div class="la-home__wall">
     <span class="hide-accessible">Wallpaper</span>
   </div>
+  <div class="la-home__diagonal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none" class="la-home__svg">
+      <polygon points="100 0 100 10 0 10" />
+    </svg>
+  </div>
 </div>
- <div class="container">
-    <app-details></app-details>
-    <app-portfolio></app-portfolio>
-    <app-about></app-about>
-</div> 
-  <app-blog></app-blog>  
+<div class="container">
+  <app-details></app-details>
+</div>
+<app-portfolio></app-portfolio>
+<div class="container">
+  <app-about></app-about>
+</div>
+
+<app-blog></app-blog>
 <!-- CONTACT-->
-  <app-contact></app-contact>  
+<app-contact></app-contact>
 <footer class="la-footer">
   <span class="la-footer__txt">Bluggie &copy; 2017</span>
 </footer>

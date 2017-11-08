@@ -1,11 +1,13 @@
-  <div class="re-init">
-    <div class="la-aptitude">
+<div class="re-init">
+  <div class="la-aptitude">
     <div class="la-aptitude__content" *ngFor="let aptitude of aptitudes; index as i">
-        <div class="la-aptitude__container" (click)="activeAptitude(i)" [class.la-aptitude__container--active]="aptitude.id == aptitudeActived" >
-          <span class="fa fa-send la-aptitude__icon"></span>
-          <span class="la-aptitude__title">{{aptitude.name}}</span>
-          <span class="la-aptitude__description">{{aptitude.shortDescription}}</span>
-        </div>
+      <div class="la-aptitude__container" (click)="activeAptitude(i)" [class.la-aptitude__container--active]="aptitude.id == aptitudeActived">
+        <figure class="la-aptitude__figure">
+          <img src="{{aptitude.img}}" al="" class="la-aptitude__icon">
+        </figure>
+        <span class="la-aptitude__title">{{aptitude.name}}</span>
+        <span class="la-aptitude__description">{{aptitude.shortDescription}}</span>
       </div>
     </div>
   </div>
+</div>

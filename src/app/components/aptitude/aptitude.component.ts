@@ -9,21 +9,21 @@ export class AptitudeComponent implements OnInit {
 
   aptitudes = [{
     id: '0',
-    name: 'Graphics Design',
+    name: 'Desarrollo Web',
     icon: '',
-    img: '',
+    img: 'assets/thumbnail_web.jpg',
     shortDescription: 'There are many variations of passages of Lorm avariable, bu in some form'
   }, {
     id: '1',
-    name: 'Marketing Online',
+    name: 'Optimización Web',
     icon: '',
-    img: '',
+    img: 'assets/thumbnail_optimization.jpg',
     shortDescription: 'There are many variations of passages of Lorm avariable, bu in some form'
   }, {
     id: '2',
-    name: 'Branding Design',
+    name: 'Bots',
     icon: '',
-    img: '',
+    img: 'assets/thumbnail_bots.jpg',
     shortDescription: 'There are many variations of passages of Lorm avariable, bu in some form'
   }
   ];

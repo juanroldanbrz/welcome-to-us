@@ -1,24 +1,16 @@
 
 .la-details{
-    margin-top: 150px;
+    margin-top: 60px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     position:relative;
     overflow-x:hidden;
+    text-align:center;
     z-index: 2;
     
     &__container{
-        .la-details__block:nth-child(1){
-            display:initial;
-            width:49%;
-        }
-        .la-details__block:nth-child(2){
-            display:inline-block;
-            width: 49%;
-            vertical-align: top;
-            padding-left: 30px;
-        }
+        width:100%;
     }
     &__list{
         display:block;
@@ -44,6 +36,9 @@
             border-bottom: 3px solid #47a6ff;
         }
     }
+    &__list{
+        display:block;
+    }
     &__head{
         color:#666666;
         padding:0;
@@ -52,13 +47,37 @@
         font-size: 30px;
         font-weight: 800;
     }
+    &__list-services{
+        padding-left:45px;
+        margin:0;
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-bottom:30px;
+        &__item{
+            display:inline-block;
+            padding-right:20px;
+            padding-left: 20px;
+            font-size:22px;
+            border-right: 1px solid #dddddd;
+            color:#666666;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
     &__subhead{
         color:#888888;
         font-family: 'Quicksand', sans-serif;
         font-size:18px;
     }
     &__title{
+        margin-bottom: 0;
         color:#47a6ff;
+        display: block;
         font-family: 'Quicksand', sans-serif;
         &--to-background{
             opacity: .03;
@@ -75,8 +94,8 @@
         }
     }
     &__figure{
-        width:300px;
-        height: 400px;
+        width:250px;
+        min-height: 250px;
         display:inline-block;
         background:#47a6ff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.13);
